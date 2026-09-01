@@ -1,6 +1,6 @@
 import React from "react";
-import { experiences } from "../data/portfolioData";
-import { Briefcase, Calendar, CheckCircle2 } from "lucide-react";
+import { experiences, education } from "../data/portfolioData";
+import { Briefcase, Calendar, GraduationCap, Award } from "lucide-react";
 
 export function ExperienceSection() {
   return (
@@ -54,6 +54,51 @@ export function ExperienceSection() {
             </div>
           ))}
         </div>
+
+        {/* Education Highlight Card */}
+        {education && (
+          <div style={{ maxWidth: "900px", margin: "2rem auto 0" }}>
+            <div className="glass-card" style={{ padding: "1.75rem 2rem", borderLeft: "3px solid var(--accent-emerald)" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "1rem" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+                  <div
+                    style={{
+                      width: "44px",
+                      height: "44px",
+                      borderRadius: "var(--radius-md)",
+                      background: "var(--bg-badge)",
+                      color: "var(--accent-emerald)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <GraduationCap size={24} />
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: "1.15rem", fontWeight: 700, color: "var(--text-primary)" }}>
+                      {education.degree}
+                    </h3>
+                    <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", marginTop: "0.15rem" }}>
+                      {education.university}
+                    </p>
+                  </div>
+                </div>
+
+                <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+                  <div style={{ textAlign: "right" }}>
+                    <div style={{ fontFamily: "var(--font-mono)", fontSize: "0.85rem", color: "var(--accent-emerald)", fontWeight: 600 }}>
+                      Score: {education.score}
+                    </div>
+                    <div style={{ fontFamily: "var(--font-mono)", fontSize: "0.78rem", color: "var(--text-muted)" }}>
+                      Graduated {education.year}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

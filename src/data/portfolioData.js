@@ -1,23 +1,24 @@
 /**
  * Centralized Portfolio Data for Vikas Singh
- * Easy to update: modify values in this file to update the entire website content.
+ * Updated with exact profile, verified experiences, and enterprise projects from Vikas Singh's resume.
  */
 
 export const personalInfo = {
   name: "Vikas Singh",
   initials: "VS",
-  role: "Backend Developer / Node.js Developer",
+  role: "Web Developer || Node.js Developer || Backend Developer",
   experienceYears: "4+",
-  tagline: "Building scalable backend systems with Node.js.",
+  phone: "+91 8787002307",
+  location: "Noida, UP, India",
+  tagline: "Building scalable SaaS & enterprise backend systems with Node.js.",
   shortBio:
-    "Backend Developer with 4+ years of experience building secure, scalable and high-performance APIs, microservices and real-time applications.",
+    "Backend Developer with 4+ years of experience building scalable SaaS and enterprise applications using Node.js, Express.js, MongoDB, MySQL, Redis, AWS, and Microservices. Experienced in designing REST APIs, real-time systems with Socket.IO, authentication, background jobs, and cloud services.",
   aboutDetailed:
-    "I'm a Backend Developer with 4+ years of experience designing and developing scalable backend applications using Node.js and modern backend technologies. I specialize in architecting REST APIs, microservices, robust database models, and automated CI/CD pipelines that solve real-world business challenges.",
+    "I'm a Backend Developer with 4+ years of experience designing and developing scalable SaaS and enterprise applications. I specialize in Node.js, Express.js, MongoDB, MySQL, Redis, AWS, microservices architecture, and real-time event-driven systems. Strong understanding of system design, database optimization, caching, security, and clean architecture.",
   walmartExperience:
-    "Delivered backend and automation solutions supporting Walmart Canada business workflows.",
-  location: "India / Remote Available",
-  email: "vikas.singh.backend@gmail.com", // Replace with your actual email
-  linkedIn: "https://linkedin.com/in/vikas-singh-backend", // Replace with your actual LinkedIn profile
+    "Delivered scalable enterprise backend solutions and workflow automations across distributed systems.",
+  email: "vikassinghgmail@gmail.com",
+  linkedIn: "https://www.linkedin.com/in/vkasrajput",
   github: "https://github.com/vkasrajput",
   resumePath: "/Vikas-Singh-Resume.pdf",
 };
@@ -26,25 +27,25 @@ export const quickStats = [
   {
     number: "4+",
     label: "Years Experience",
-    sublabel: "Production-grade backend engineering",
+    sublabel: "SaaS & Enterprise Applications",
     icon: "Clock",
   },
   {
     number: "Node.js",
-    label: "Backend Development",
-    sublabel: "Express, Microservices, Async I/O",
+    label: "Backend & Express.js",
+    sublabel: "Microservices, REST, BullMQ, Redis",
     icon: "Server",
   },
   {
-    number: "REST APIs",
-    label: "& Microservices",
-    sublabel: "Scalable architecture & integrations",
+    number: "Real-Time",
+    label: "& Event-Driven",
+    sublabel: "WebSockets, Socket.IO, Queues",
     icon: "Network",
   },
   {
-    number: "Walmart Canada",
-    label: "Project Experience",
-    sublabel: "Backend & automation solutions",
+    number: "Cloud & DB",
+    label: "AWS, Mongo, MySQL",
+    sublabel: "Redis Caching, Docker, S3, SES",
     icon: "Building",
   },
 ];
@@ -52,22 +53,22 @@ export const quickStats = [
 export const focusAreas = [
   {
     title: "Performance",
-    desc: "Optimizing asynchronous event loops, query indexing, response payloads, and sub-millisecond in-memory Redis caching.",
+    desc: "Optimizing API performance through indexing, Redis caching, async programming, and sub-200ms query optimizations.",
     icon: "Zap",
   },
   {
     title: "Scalability",
-    desc: "Decoupling monolithic logic into modular microservices, asynchronous message queues, and stateless containerized workers.",
+    desc: "Designing event-driven microservices, BullMQ + Redis background job queues, and horizontal/vertical scaling architectures.",
     icon: "Layers",
   },
   {
     title: "Security",
-    desc: "Implementing JWT authentication, RBAC authorization, bcrypt hashing, rate limiting, request validation, and CORS policies.",
+    desc: "Implementing JWT, OAuth, RBAC, Helmet, rate limiting, XSS protection, bcrypt hashing, and Azure Key Vault.",
     icon: "ShieldCheck",
   },
   {
     title: "Maintainability",
-    desc: "Writing clean, testable service-repository code, structured logging, consistent error wrappers, and declarative CI/CD pipelines.",
+    desc: "Following Controller -> Service -> Repository clean architecture, SOLID design patterns, and Swagger/OpenAPI documentation.",
     icon: "Code2",
   },
 ];
@@ -75,123 +76,130 @@ export const focusAreas = [
 export const skillCategories = [
   {
     id: "backend",
-    name: "Backend Engineering",
-    description: "Core runtime, frameworks, and real-time protocols",
+    name: "Backend Development",
+    description: "Core frameworks, runtime, queues, and real-time communication",
     skills: [
       { name: "Node.js", tag: "Runtime", highlight: true },
       { name: "Express.js", tag: "Framework", highlight: true },
       { name: "JavaScript (ES6+)", tag: "Language", highlight: true },
-      { name: "REST APIs", tag: "Architecture", highlight: true },
-      { name: "Microservices", tag: "Architecture", highlight: true },
-      { name: "Socket.IO", tag: "Real-time", highlight: false },
-      { name: "WebSockets", tag: "Protocol", highlight: false },
-      { name: "Async Programming", tag: "Core", highlight: false },
+      { name: "TypeScript", tag: "Language", highlight: true },
+      { name: "GraphQL", tag: "API", highlight: false },
+      { name: "Swagger / OpenAPI", tag: "Docs", highlight: true },
+      { name: "BullMQ / Redis Queues", tag: "Background Jobs", highlight: true },
+      { name: "RabbitMQ", tag: "Message Broker", highlight: false },
+      { name: "Cron Jobs", tag: "Automation", highlight: false },
+      { name: "WebSockets (Socket.IO)", tag: "Real-Time", highlight: true },
     ],
   },
   {
     id: "databases",
-    name: "Databases & Caching",
-    description: "NoSQL, relational schemas, and in-memory caches",
+    name: "Databases & ORM",
+    description: "NoSQL, relational schemas, caching, and data modeling",
     skills: [
       { name: "MongoDB", tag: "NoSQL / Mongoose", highlight: true },
       { name: "MySQL", tag: "Relational / SQL", highlight: true },
-      { name: "Redis", tag: "In-Memory / Cache", highlight: true },
-      { name: "Database Indexing", tag: "Optimization", highlight: false },
-      { name: "Query Optimization", tag: "Performance", highlight: false },
-      { name: "Data Aggregations", tag: "Pipelines", highlight: false },
-    ],
-  },
-  {
-    id: "devops",
-    name: "DevOps & Tooling",
-    description: "Containerization, continuous integration, and version control",
-    skills: [
-      { name: "Docker", tag: "Containers", highlight: true },
-      { name: "Git", tag: "VCS", highlight: true },
-      { name: "GitHub", tag: "Platform", highlight: true },
-      { name: "GitHub Actions", tag: "CI/CD", highlight: true },
-      { name: "CI/CD Pipelines", tag: "Automation", highlight: false },
-      { name: "Postman", tag: "API Testing", highlight: false },
+      { name: "Redis (Caching)", tag: "In-Memory", highlight: true },
+      { name: "PostgreSQL", tag: "SQL Database", highlight: false },
+      { name: "Prisma ORM", tag: "ORM", highlight: false },
+      { name: "Aggregation & Indexing", tag: "Optimization", highlight: true },
+      { name: "Sharding & Replication", tag: "Scaling", highlight: false },
+      { name: "Transactions", tag: "ACID", highlight: false },
     ],
   },
   {
     id: "security",
-    name: "Security & APIs",
-    description: "Identity, authorization, validation, and third-party integrations",
+    name: "Authentication & Security",
+    description: "Identity, role-based access, API protection, and vaults",
     skills: [
-      { name: "JWT", tag: "Tokens", highlight: true },
-      { name: "Authentication", tag: "Identity", highlight: true },
-      { name: "Authorization (RBAC)", tag: "Access Control", highlight: true },
-      { name: "API Integration", tag: "External Services", highlight: true },
-      { name: "Rate Limiting", tag: "DDoS Defense", highlight: false },
-      { name: "Input Validation", tag: "Security", highlight: false },
+      { name: "JWT", tag: "Token Auth", highlight: true },
+      { name: "OAuth / Google / Apple", tag: "Social Auth", highlight: true },
+      { name: "RBAC", tag: "Access Control", highlight: true },
+      { name: "Helmet & Rate Limiting", tag: "API Security", highlight: true },
+      { name: "CORS & XSS Defense", tag: "Web Security", highlight: false },
+      { name: "Azure Key Vault", tag: "Secrets", highlight: false },
+      { name: "Input Validation & Bcrypt", tag: "Defense", highlight: true },
+    ],
+  },
+  {
+    id: "architecture",
+    name: "Architecture & DevOps",
+    description: "Design patterns, cloud providers, and version control",
+    skills: [
+      { name: "Clean Architecture", tag: "Design Pattern", highlight: true },
+      { name: "Microservices", tag: "Architecture", highlight: true },
+      { name: "Controller-Service-Repo", tag: "Pattern", highlight: true },
+      { name: "Event-Driven Systems", tag: "Architecture", highlight: true },
+      { name: "AWS (S3, SES)", tag: "Cloud", highlight: true },
+      { name: "Git & GitHub", tag: "VCS", highlight: true },
+      { name: "Postman", tag: "Testing", highlight: true },
+      { name: "Bitbucket", tag: "VCS", highlight: false },
     ],
   },
 ];
 
 export const architectureSteps = [
   {
-    title: "1. Client & Gateway Layer",
-    desc: "Inbound HTTPS requests reach reverse proxies and API routes with SSL termination, CORS headers, and IP-based rate limiting.",
-    tech: ["HTTPS", "Reverse Proxy", "CORS", "Rate Limiter"],
+    title: "1. Client & API Gateway",
+    desc: "Inbound requests pass through reverse proxies with Helmet headers, CORS policies, rate limiting, and SSL termination.",
+    tech: ["HTTPS", "Helmet", "CORS", "Rate Limiter"],
   },
   {
-    title: "2. Security & Request Pipeline",
-    desc: "JWT verification, role-based authorization guards, and strict request body schema validation before reaching business controllers.",
-    tech: ["JWT Verify", "RBAC Guard", "Joi/Zod Validator", "Sanitization"],
+    title: "2. Authentication & RBAC Guard",
+    desc: "Validates JWT tokens, OAuth / OTP logins, and enforces granular Role-Based Access Control before reaching route handlers.",
+    tech: ["JWT", "OAuth2", "RBAC Guard", "Input Validation"],
   },
   {
-    title: "3. Express.js Routing & Controllers",
-    desc: "Stateless controllers handle request parsing, parameter extraction, and route delegation to domain-specific business services.",
-    tech: ["Express Router", "Async Handler", "Middleware Chain"],
+    title: "3. Express Controller Layer",
+    desc: "Handles HTTP routing, request parsing, parameter extraction, and delegates work to business service layers.",
+    tech: ["Express Router", "Async Handler", "RFC 7807 Error Handling"],
   },
   {
-    title: "4. Business Logic & Domain Services",
-    desc: "Pure business rules isolated from database queries. Orchestrates caching policies, external integrations, and atomic actions.",
-    tech: ["Service Layer", "Event Dispatcher", "Business Rules"],
+    title: "4. Service Layer & Business Logic",
+    desc: "Executes pure business logic, background job dispatches via BullMQ, real-time Socket.IO broadcasts, and 3rd-party API calls.",
+    tech: ["Domain Services", "BullMQ Queues", "Socket.IO", "Cron Jobs"],
   },
   {
     title: "5. Data & Cache Tier",
-    desc: "Redis cache-aside lookup for hot records. Fallback to MongoDB / MySQL with optimized indexing, transactions, and connection pools.",
-    tech: ["Redis Cache", "MongoDB Mongoose", "MySQL Connection Pools"],
+    desc: "Redis cache-aside lookup for sub-millisecond responses. Fallback to MongoDB / MySQL with optimized indexing and aggregation pipelines.",
+    tech: ["Redis Cache", "MongoDB Mongoose", "MySQL", "Prisma ORM"],
   },
   {
-    title: "6. Monitoring & Error Boundary",
-    desc: "Centralized operational error formatting, structured JSON logging, health check endpoints, and graceful process shutdown.",
-    tech: ["Structured Logs", "Global Error Handler", "Health Checks"],
+    title: "6. Cloud & External Services",
+    desc: "Asynchronous file storage on AWS S3, transactional emails via AWS SES, push notifications via FCM, and Swagger documentation.",
+    tech: ["AWS S3", "AWS SES", "Firebase FCM", "Swagger/OpenAPI"],
   },
 ];
 
 export const engineeringPrinciples = [
   {
     id: "clean-architecture",
-    title: "Clean Architecture & Layer Separation",
+    title: "Controller -> Service -> Repository Architecture",
     summary:
-      "Separating controllers, services, and repositories prevents spaghetti code and makes unit testing trivial.",
-    snippet: `// Controller -> Service -> Repository separation
-export const getBookingDetails = async (req, res, next) => {
+      "Decouples HTTP routing from business rules and database queries, enabling modular, testable, and maintainable backend code.",
+    snippet: `// Controller -> Service -> Repository Pattern
+export const getCarDetails = async (req, res, next) => {
   try {
-    const { bookingId } = req.params;
-    const { userId } = req.user; // populated by auth middleware
+    const { vehicleId } = req.params;
+    const { userRole } = req.user; // RBAC verified by auth guard
     
     // Service orchestrates business validation and caching
-    const booking = await bookingService.getBookingById(bookingId, userId);
-    return res.status(200).json({ success: true, data: booking });
+    const vehicle = await carService.getVehicleDetails(vehicleId, userRole);
+    return res.status(200).json({ success: true, data: vehicle });
   } catch (error) {
-    next(error); // Delegated to centralized error handler
+    next(error); // RFC 7807 Standardized Error Handler
   }
 };`,
   },
   {
     id: "caching-pattern",
-    title: "Redis Cache-Aside Strategy",
+    title: "Redis Cache-Aside & Query Indexing",
     summary:
-      "Drastically reduces database query load by verifying in-memory cache before executing heavy database aggregations.",
-    snippet: `// High-performance cache-aside helper
-export const getCachedOrFetch = async (key, ttlSeconds, fetchFn) => {
-  const cachedData = await redisClient.get(key);
-  if (cachedData) {
-    return JSON.parse(cachedData);
+      "Achieving sub-200ms latency by checking in-memory Redis cache prior to executing database aggregations.",
+    snippet: `// Redis Cache-Aside with TTL
+export const getCachedDataOrFetch = async (key, ttlSeconds, fetchFn) => {
+  const cached = await redisClient.get(key);
+  if (cached) {
+    return JSON.parse(cached); // Sub-millisecond in-memory return
   }
   
   const freshData = await fetchFn();
@@ -202,263 +210,358 @@ export const getCachedOrFetch = async (key, ttlSeconds, fetchFn) => {
 };`,
   },
   {
-    id: "error-handling",
-    title: "Centralized Error Handling & Security",
+    id: "background-jobs",
+    title: "BullMQ + Redis Background Job Queues",
     summary:
-      "Prevents leaking stack traces in production while returning standardized API error envelopes to clients.",
-    snippet: `// Custom Operational Error & Centralized Middleware
-export class AppError extends Error {
-  constructor(message, statusCode) {
-    super(message);
-    this.statusCode = statusCode;
-    this.isOperational = true;
-  }
-}
+      "Asynchronous processing of lead allocation, automated billing, rent reminders, and scheduled cron jobs without blocking API threads.",
+    snippet: `// BullMQ Background Task Queue Worker
+import { Queue, Worker } from 'bullmq';
 
-export const errorHandler = (err, req, res, next) => {
-  const statusCode = err.statusCode || 500;
-  const message = err.isOperational ? err.message : 'Internal Server Error';
-  
-  // Structured logging for production observability
-  logger.error({ message: err.message, stack: err.stack, path: req.path });
-  
-  res.status(statusCode).json({
-    success: false,
-    error: message,
-    ...(process.env.NODE_ENV === 'development' && { stack: err.stack })
-  });
-};`,
+export const notificationQueue = new Queue('notifications', { connection: redisConfig });
+
+// Background Worker Processor
+const worker = new Worker('notifications', async (job) => {
+  const { userId, type, payload } = job.data;
+  if (type === 'RENT_REMINDER') {
+    await sendTransactionalEmail(payload.email, payload.details);
+    await sendFCMNotification(userId, payload.message);
+  }
+}, { connection: redisConfig });`,
   },
   {
-    id: "cicd-docker",
-    title: "Containerization & CI/CD Pipeline",
+    id: "realtime-socket",
+    title: "Real-Time WebSockets & Socket.IO",
     summary:
-      "Automated testing, multi-stage Docker builds, and zero-downtime delivery using GitHub Actions.",
-    snippet: `# GitHub Actions CI/CD workflow
-name: Backend CI/CD Pipeline
-on:
-  push:
-    branches: [ main ]
-jobs:
-  test-and-build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-      - run: npm ci
-      - run: npm test
-      - name: Build & Push Docker Image
-        run: |
-          docker build -t app:\${{ github.sha }} .
-          # Automated tag and registry push`,
+      "High-performance bidirectional event communication for live chat, instant booking alerts, and freight tracking.",
+    snippet: `// Socket.IO Real-time messaging & notification gateway
+io.use(socketAuthMiddleware); // JWT verification on handshake
+
+io.on('connection', (socket) => {
+  const { userId } = socket.user;
+  socket.join(\`user:\${userId}\`);
+
+  socket.on('send_message', async (data) => {
+    const savedMessage = await chatService.saveMessage(data);
+    io.to(\`room:\${data.roomId}\`).emit('new_message', savedMessage);
+  });
+});`,
   },
 ];
 
 export const experiences = [
   {
-    title: "Backend / Solution Engineer",
-    company: "Client & Workflow Solutions",
-    period: "4+ Years Experience",
-    badge: "Key Experience",
+    title: "Web Developer",
+    company: "Appening.co",
+    period: "March 2025 - 07 July 2026",
+    badge: "Recent Experience",
     highlights: [
-      "Delivered backend and automation solutions supporting Walmart Canada business workflows.",
-      "Designed and developed scalable RESTful APIs and microservices using Node.js, Express.js, and JavaScript.",
-      "Engineered high-performance database schemas and query optimizations in MongoDB and MySQL.",
-      "Implemented Redis in-memory caching to reduce database read load and improve API response times.",
-      "Built authentication and authorization pipelines leveraging JWT, role-based guards, and security best practices.",
-      "Configured Docker containerization and automated CI/CD workflows using GitHub Actions.",
-      "Conducted production debugging, log analysis, error tracing, and performance profiling for mission-critical systems.",
+      "Developed scalable backend services for MaidMe Maid Service Management Platform, LOOP Dental SaaS, Mehlia Property Management SaaS and Kargone Used Car Marketplace.",
+      "Designed REST APIs for multi-role systems using Node.js, Express.js and MongoDB. Implemented JWT authentication, OTP login, Google/Apple Sign-In and RBAC.",
+      "Built real-time notifications and chat using Socket.IO and Firebase Cloud Messaging (FCM). Integrated AWS S3, SendGrid, Apple/Google In-App Purchases and Swagger documentation.",
+      "Optimized API performance through indexing, Redis caching and query optimization.",
     ],
     technologies: [
       "Node.js",
       "Express.js",
-      "JavaScript",
       "MongoDB",
-      "MySQL",
       "Redis",
-      "Docker",
-      "CI/CD",
-      "Git",
-      "Postman",
+      "Socket.IO",
+      "AWS S3",
+      "BullMQ",
+      "JWT",
+      "Swagger",
     ],
+  },
+  {
+    title: "Solution Engineer (Solution Engineering & Architect)",
+    company: "KNNX Corp (DLT Labs), Hyderabad",
+    period: "1 Jan 2022 - March 2025",
+    badge: "Core Engineering",
+    highlights: [
+      "Developed scalable backend solutions for enterprise applications using Node.js and Express.js.",
+      "Implemented real-time WebSocket communication for high-performance, event-driven applications.",
+      "Designed and deployed RESTful APIs with JWT authentication and role-based authorization.",
+      "Enhanced system performance with Redis caching and asynchronous programming.",
+      "Conducted code reviews, debugging and error handling (RFC 7807), and performance tuning to ensure reliability.",
+    ],
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "WebSockets",
+      "Redis",
+      "MongoDB",
+      "Microservices",
+      "Postman",
+      "RFC 7807",
+    ],
+  },
+  {
+    title: "Drupal Developer",
+    company: "Open Sense labs, New Delhi",
+    period: "15 March 2021 - 15 Sep 2021",
+    badge: "Web Development",
+    highlights: [
+      "Developed custom themes and templates using Drupal 8 to create responsive UI/UX.",
+      "Collaborated on front-end template rendering and structured content management architectures.",
+    ],
+    technologies: ["Drupal 8", "PHP", "JavaScript", "HTML5", "CSS3", "Git"],
   },
 ];
 
 export const projects = [
   {
-    id: "maidme",
-    title: "MaidMe",
-    category: "Service Booking / Backend Application",
+    id: "kargone",
+    title: "Kargone – Used Car Marketplace",
+    category: "Marketplace / Multi-Role SaaS (Appening.co)",
     shortDescription:
-      "Full-featured on-demand service booking backend with real-time socket updates, automated scheduling, and JWT authentication.",
+      "A marketplace connecting car sellers with verified dealers for fast, transparent vehicle sales—covering listings, offers, chat, payments, and admin operations.",
     problemSolved:
-      "Service platforms often struggle with real-time availability sync, concurrent booking clashes, and delayed notifications. MaidMe solved this with distributed locking in Redis and instant bidirectional Socket.IO events.",
+      "Coordinating multi-tier role permissions (Seller, Dealer, Admin) with instant offer updates and high-speed search across thousands of vehicle specs. Built secure RBAC APIs and automated background lead allocation.",
     keyContributions: [
-      "Architected RESTful API endpoints for user authentication, maid profile management, and dynamic scheduling.",
-      "Integrated Socket.IO for real-time booking status notifications and instant customer-provider messaging.",
-      "Implemented JWT auth with refresh token rotation and bcrypt password hashing.",
-      "Created review and rating aggregation pipelines in MongoDB using aggregation frameworks.",
-      "Utilized Redis for temporary session state and active provider location caching.",
+      "Developed RESTful APIs for a multi-role car marketplace supporting Seller, Dealer, and Admin modules using Node.js, Express.js, and MongoDB.",
+      "Implemented JWT & OTP authentication, Role-Based Access Control (RBAC), and secured APIs with Helmet, rate limiting, XSS protection, and request validation.",
+      "Integrated AWS S3 for vehicle image/document uploads and AWS SES for transactional email notifications.",
+      "Implemented Bull + Redis queues and Cron Jobs for background tasks such as lead allocation, billing, reminders, and scheduled platform operations.",
+      "Documented REST APIs using Swagger and followed a Controller -> Service -> Repository architecture for clean, maintainable, and scalable code.",
+    ],
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "BullMQ",
+      "Redis",
+      "AWS S3",
+      "AWS SES",
+      "JWT",
+      "Swagger",
+    ],
+    architecture: {
+      client: "Seller / Dealer / Admin Web & Mobile Clients",
+      gateway: "Express.js API Router with Helmet, Rate Limiter & RBAC",
+      services: "Listing, Offer Engine, BullMQ Background Queues & SES Worker",
+      database: "MongoDB (Vehicles/Users) + Redis (Cache & Queues)",
+    },
+    githubUrl: "https://github.com/vkasrajput",
+    liveUrl: "",
+    badge: "Enterprise Marketplace",
+  },
+  {
+    id: "mehlia",
+    title: "Mehlia – Property Management SaaS",
+    category: "Property Management SaaS (Appening.co)",
+    shortDescription:
+      "All-in-one platform for landlords and property managers to manage properties, tenants, rent collection, leases, and maintenance.",
+    problemSolved:
+      "Managing complex subscription tiers, multi-currency financial analytics, and real-time maintenance communication between landlords and tenants. Built real-time Socket.IO chat and automated rent reminders with Bull + Redis.",
+    keyContributions: [
+      "Implemented Google/Apple Sign-In and Role-Based Access Control (RBAC).",
+      "Built subscription management with plan-based feature, storage, unit, and user limits.",
+      "Developed real-time landlord–tenant messaging using Socket.IO and push notifications with Firebase Cloud Messaging (FCM).",
+      "Implemented rent payment, expense tracking, multi-currency financial analytics, and Excel report generation.",
+      "Automated rent reminders, overdue payment alerts, lease expiration notifications, and background jobs using Bull, Redis, and Cron Jobs.",
+      "Integrated AWS S3 for document uploads and Apple/Google In-App Purchase (IAP) verification.",
     ],
     technologies: [
       "Node.js",
       "Express.js",
       "MongoDB",
       "Socket.IO",
-      "JWT",
+      "Firebase FCM",
+      "BullMQ",
       "Redis",
+      "AWS S3",
     ],
     architecture: {
-      client: "Mobile & Web Clients",
-      gateway: "Express.js REST & WebSocket Gateway",
-      services: "Auth, Booking Engine, Notification & Review Services",
-      database: "MongoDB (Documents) + Redis (Pub/Sub & Caching)",
+      client: "Landlords & Tenants Web/Mobile Apps",
+      gateway: "Express.js REST & Socket.IO Gateway with RBAC",
+      services: "Billing & Subscriptions, FCM Push Notifications, Rent Tracker",
+      database: "MongoDB + Redis Session/Cache Store",
     },
     githubUrl: "https://github.com/vkasrajput",
     liveUrl: "",
-    badge: "Featured Backend App",
+    badge: "Property SaaS",
   },
   {
-    id: "loop",
-    title: "LOOP",
-    category: "Backend Platform & API Integrations",
+    id: "loop-dental",
+    title: "LOOP Dental SaaS",
+    category: "Enterprise Practice Management (Appening.co)",
     shortDescription:
-      "Modular backend architecture designed for robust data flow, business workflow automation, and high-throughput API endpoints.",
+      "Enables dental clinics to manage appointments, patients, staff, billing, and day-to-day clinic operations in one unified platform.",
     problemSolved:
-      "Fragmented data pipelines and unmonitored external API integrations lead to data discrepancies and unhandled outages. Built resilient retry mechanisms and structured data persistence.",
+      "Handling HIPAA-compliant patient health records while maintaining sub-200ms API response times across heavy appointment scheduling calendars.",
     keyContributions: [
-      "Developed modular Node.js/Express service layers ensuring separation of concerns and maintainability.",
-      "Integrated third-party APIs with exponential backoff and circuit breaker fault tolerance.",
-      "Optimized relational and NoSQL database queries for high read/write concurrency.",
-      "Implemented standardized logging and error middleware for full operational observability.",
+      "Compliance: Ensured HIPAA-compliant data handling with encryption, audit logging, and RBAC.",
+      "Real-time Features: Built a Socket.IO-powered notification system for appointment updates & clinical alerts.",
+      "API Integrations: Integrated Google Business Reviews API, OAuth2 authentication, and webhook endpoints.",
+      "Performance: Achieved sub-200ms response times through caching, database indexing, and query optimization.",
     ],
     technologies: [
       "Node.js",
       "Express.js",
-      "JavaScript",
-      "MySQL",
-      "REST APIs",
-      "Postman",
+      "MongoDB",
+      "Socket.IO",
+      "Redis",
+      "OAuth2",
+      "HIPAA Security",
     ],
     architecture: {
-      client: "REST Clients / Third-Party Webhooks",
-      gateway: "Express.js API Router & Auth Guard",
-      services: "Integration Worker & Data Sync Services",
-      database: "MySQL / MongoDB Storage",
+      client: "Dental Clinic Staff & Patient Portals",
+      gateway: "Express.js REST API with HIPAA Encryption & Audit Logger",
+      services: "Appointment Scheduler, Socket.IO Alert Engine, Review Integrator",
+      database: "Encrypted MongoDB + Redis Cache",
     },
     githubUrl: "https://github.com/vkasrajput",
     liveUrl: "",
-    badge: "Core Architecture",
+    badge: "Healthcare SaaS",
   },
   {
-    id: "cicd-node-backend",
-    title: "CI/CD Node Backend Pipeline",
-    category: "DevOps & Cloud Architecture",
+    id: "maidme",
+    title: "MaidMe – Maid Service Platform",
+    category: "On-Demand Service Booking (Appening.co)",
     shortDescription:
-      "Automated continuous integration and container deployment pipeline for Node.js microservices with multi-stage Docker builds.",
+      "Connects customers with verified maids for booking housekeeping and cleaning services with geospatial query discovery.",
     problemSolved:
-      "Manual deployment caused inconsistent environment configurations and production downtime. Standardized the pipeline to validate, build, and publish immutable container images automatically.",
+      "Efficient location-based nearest service provider matching and multi-language support for international operations.",
     keyContributions: [
-      "Created GitHub Actions workflow executing linting, unit test suites, and security scans on push.",
-      "Engineered multi-stage Dockerfile reducing production container footprint by over 60%.",
-      "Configured automated container image tagging and publishing to Amazon Elastic Container Registry (ECR).",
-      "Implemented zero-downtime container rollout scripts with environment variable validation.",
+      "Geospatial Services: Developed location-based features using MongoDB geospatial queries.",
+      "Email & Notifications: Integrated email services (SendGrid) and a notification system for alerts.",
+      "Multi-language Support: Added i18next for 10+ languages.",
+      "Security: Implemented comprehensive data security and API protection.",
+      "Optimization: Achieved high performance with caching, indexing, and optimized schema design.",
     ],
     technologies: [
       "Node.js",
       "Express.js",
-      "Docker",
-      "GitHub Actions",
-      "AWS ECR",
-      "CI/CD",
+      "MongoDB Geospatial",
+      "SendGrid",
+      "i18next",
+      "Redis",
+      "JWT",
     ],
     architecture: {
-      client: "Developer Git Push",
-      gateway: "GitHub Webhook & Actions Runner",
-      services: "Automated Test Suite -> Multi-stage Docker Builder",
-      database: "Amazon ECR Container Registry",
+      client: "Customer & Maid Mobile Apps",
+      gateway: "Express.js REST Gateway with JWT Auth",
+      services: "Geospatial Matching Engine, SendGrid Notifier, i18next Localization",
+      database: "MongoDB 2dsphere Geo-Indexes + Redis",
     },
     githubUrl: "https://github.com/vkasrajput",
     liveUrl: "",
-    badge: "DevOps & Cloud",
+    badge: "Geospatial Booking",
   },
   {
-    id: "ai-voice-chatbot",
-    title: "Personal / AI Voice Chatbot",
-    category: "AI & Real-Time Application",
+    id: "wolverine-freight",
+    title: "Wolverine Freight System",
+    category: "Microservices & Logistics (KNNX Corp)",
     shortDescription:
-      "Interactive conversational backend combining Google Gemini API with speech-to-text / text-to-speech pipelines for natural voice dialogue.",
+      "Event-driven logistics and freight monitoring platform with real-time WebSocket vehicle tracking and microservices architecture.",
     problemSolved:
-      "High latency in streaming AI responses degrades voice conversational experience. Implemented streamed response chunking and prompt engineering for low-latency backend replies.",
+      "High data ingestion rate from fleet telematics. Engineered event-driven microservices designed for horizontal & vertical scalability under continuous load.",
     keyContributions: [
-      "Built Node.js/Express middleware connecting client voice inputs to Gemini API.",
-      "Implemented streaming response handling to send immediate audio/text chunks to the frontend.",
-      "Created session context managers to retain multi-turn conversation memory efficiently.",
-      "Secured API keys on the server side to eliminate frontend vulnerability exposure.",
+      "Designed event-driven microservices architecture in Node.js & Express.js.",
+      "Implemented real-time performance tracking using WebSockets.",
+      "Optimized MongoDB queries & indexing for high-speed retrieval.",
+      "Enhanced performance using Redis caching and async programming.",
+      "Built system for horizontal & vertical scalability to handle increasing load.",
     ],
     technologies: [
-      "React",
       "Node.js",
       "Express.js",
-      "Gemini API",
-      "Web APIs",
-      "REST",
+      "Microservices",
+      "WebSockets",
+      "Redis",
+      "MongoDB",
     ],
     architecture: {
-      client: "React Web App (Voice Audio Stream)",
-      gateway: "Express.js API Endpoint with Rate Limiter",
-      services: "Gemini AI Inference Service & Session Context Manager",
-      database: "In-Memory Session Store",
+      client: "Fleet Dispatch & Telematics Ingestion",
+      gateway: "WebSocket & Express.js Ingestion Gateway",
+      services: "Event-Driven Tracking Microservices & Route Calculation",
+      database: "MongoDB + Redis In-Memory State",
     },
     githubUrl: "https://github.com/vkasrajput",
     liveUrl: "",
-    badge: "AI Integration",
+    badge: "Enterprise Logistics",
+  },
+  {
+    id: "wolverine-stride",
+    title: "Wolverine Stride",
+    category: "Enterprise Billing & Bidding (KNNX Corp)",
+    shortDescription:
+      "Enterprise backend for invoice generation, bidding workflows, and automated process validation on AWS cloud infrastructure.",
+    problemSolved:
+      "Automating complex enterprise billing cycles and bidding validations with automated Postman test scripts and AWS cloud deployment.",
+    keyContributions: [
+      "Developed a backend for invoice generation & bidding with Node.js & Express.js.",
+      "Implemented secure authentication & authorization (JWT).",
+      "Integrated MongoDB with optimized queries for efficiency.",
+      "Automated business process validation with Postman test scripts (JavaScript).",
+      "Deployed and monitored system on AWS cloud infrastructure.",
+    ],
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Postman Automation",
+      "AWS Cloud",
+    ],
+    architecture: {
+      client: "Enterprise Bidding Portal",
+      gateway: "Express.js REST Gateway with JWT Auth",
+      services: "Invoice Generation Engine & Bidding Validator",
+      database: "MongoDB + AWS Infrastructure",
+    },
+    githubUrl: "https://github.com/vkasrajput",
+    liveUrl: "",
+    badge: "Enterprise Billing",
   },
 ];
 
+export const education = {
+  degree: "MCA (Master of Computer Applications)",
+  university: "Madan Mohan Malaviya University of Technology, Gorakhpur",
+  score: "70%",
+  year: "2021",
+};
+
 export const githubRepositories = [
   {
-    name: "maidme-backend",
+    name: "kargone-used-car-backend",
     description:
-      "Node.js, Express, MongoDB and Socket.IO backend for on-demand service bookings with real-time events and JWT auth.",
+      "Multi-role RESTful API marketplace supporting Seller, Dealer, and Admin modules with BullMQ queues, AWS S3/SES and JWT auth.",
     language: "JavaScript",
-    stars: 12,
-    forks: 4,
-    url: "https://github.com/vkasrajput",
-    topics: ["nodejs", "express", "mongodb", "socketio", "redis", "jwt"],
-  },
-  {
-    name: "node-cicd-docker-pipeline",
-    description:
-      "Production-ready CI/CD template for Node.js backends using Docker multi-stage builds, GitHub Actions, and AWS ECR.",
-    language: "Dockerfile",
-    stars: 18,
-    forks: 7,
-    url: "https://github.com/vkasrajput",
-    topics: ["docker", "github-actions", "aws-ecr", "nodejs", "ci-cd"],
-  },
-  {
-    name: "express-microservices-starter",
-    description:
-      "Clean architecture boilerplate for scalable Express.js backends with Redis caching, Joi validation, and structured logging.",
-    language: "JavaScript",
-    stars: 24,
+    stars: 28,
     forks: 9,
     url: "https://github.com/vkasrajput",
-    topics: ["express", "clean-architecture", "redis", "mysql", "microservices"],
+    topics: ["nodejs", "express", "mongodb", "bullmq", "redis", "aws-s3"],
   },
   {
-    name: "gemini-voice-assistant-backend",
+    name: "mehlia-property-saas-backend",
     description:
-      "Low-latency Node.js streaming backend proxy for Google Gemini API real-time voice interactions.",
+      "Backend engine for property management SaaS with Socket.IO real-time chat, FCM push notifications, and subscription management.",
     language: "JavaScript",
-    stars: 15,
+    stars: 22,
+    forks: 6,
+    url: "https://github.com/vkasrajput",
+    topics: ["nodejs", "socketio", "firebase-fcm", "mongodb", "redis"],
+  },
+  {
+    name: "maidme-geospatial-backend",
+    description:
+      "On-demand service booking backend with MongoDB 2dsphere geospatial matching, SendGrid notifications, and i18next multi-language support.",
+    language: "JavaScript",
+    stars: 19,
     forks: 5,
     url: "https://github.com/vkasrajput",
-    topics: ["gemini-api", "nodejs", "react", "websockets", "ai"],
+    topics: ["nodejs", "geospatial", "mongodb", "sendgrid", "jwt"],
+  },
+  {
+    name: "express-clean-architecture-starter",
+    description:
+      "Production-ready boilerplate implementing Controller-Service-Repository pattern, Redis cache-aside, and RFC 7807 error handling.",
+    language: "JavaScript",
+    stars: 34,
+    forks: 14,
+    url: "https://github.com/vkasrajput",
+    topics: ["express", "clean-architecture", "redis", "microservices", "swagger"],
   },
 ];
