@@ -104,7 +104,7 @@ export function ContactSection() {
                     rel="noopener noreferrer"
                     style={{ fontWeight: 600, color: "var(--text-primary)", fontSize: "0.95rem" }}
                   >
-                    linkedin.com/in/vikas-singh
+                    linkedin.com/in/vkasrajput
                   </a>
                 </div>
               </div>
