@@ -48,7 +48,7 @@ function drawBullet(x, y, type = 'solid') {
 doc.font('Helvetica-Bold').fontSize(18).fillColor(primaryColor).text('Vikas Singh', 38, 32);
 doc.font('Helvetica').fontSize(9.5).fillColor(darkColor).text('Web Developer || Node.js Developer || Backend Developer');
 doc.font('Helvetica').fontSize(8.5).fillColor(textColor).text('Noida, UP, India');
-doc.font('Helvetica').fontSize(8.5).fillColor(textColor).text('8787002307');
+doc.font('Helvetica').fontSize(8.5).fillColor(textColor).text('8787002307, 8931890395');
 doc.font('Helvetica').fontSize(8.5).fillColor(textColor).text('vikassinghgmail@gmail.com');
 doc.font('Helvetica').fontSize(8.5).fillColor(textColor).text('https://www.linkedin.com/in/vkasrajput');
 

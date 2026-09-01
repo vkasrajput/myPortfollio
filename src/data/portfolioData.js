@@ -9,6 +9,12 @@ export const personalInfo = {
   role: "Web Developer || Node.js Developer || Backend Developer",
   experienceYears: "4+",
   phone: "+91 8787002307",
+  phonePrimary: "+91 8787002307",
+  phoneSecondary: "+91 8931890395",
+  phones: [
+    { label: "Primary", number: "+91 8787002307", raw: "+918787002307" },
+    { label: "Alternate", number: "+91 8931890395", raw: "+918931890395" },
+  ],
   location: "Noida, UP, India",
   tagline: "Building scalable SaaS & enterprise backend systems with Node.js.",
   shortBio:
