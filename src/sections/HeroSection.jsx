@@ -21,9 +21,20 @@ export function HeroSection() {
         <div className="hero-grid">
           {/* Left Column: Text & CTAs */}
           <div>
-            <div className="hero-badge">
-              <Terminal size={14} />
-              <span>BACKEND DEVELOPER • 4+ YEARS EXP</span>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
+              <div className="hero-author-chip">
+                <img
+                  src="/profile.png"
+                  alt="Vikas Singh"
+                  className="hero-chip-avatar"
+                />
+                <span className="hero-chip-text">Vikas Singh</span>
+              </div>
+
+              <div className="hero-badge" style={{ marginBottom: "1.25rem" }}>
+                <Terminal size={14} />
+                <span>BACKEND DEVELOPER • 4+ YEARS EXP</span>
+              </div>
             </div>
 
             <h1 className="hero-title">
