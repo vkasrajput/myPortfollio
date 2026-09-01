@@ -1,7 +1,7 @@
 import React from "react";
 import { personalInfo } from "../data/portfolioData";
 import { SystemVisualizer } from "../components/SystemVisualizer";
-import { ArrowRight, Download, Eye, Sparkles, Terminal } from "lucide-react";
+import { ArrowRight, Download, Terminal } from "lucide-react";
 
 export function HeroSection() {
   const heroTechnologies = [
@@ -21,20 +21,9 @@ export function HeroSection() {
         <div className="hero-grid">
           {/* Left Column: Text & CTAs */}
           <div>
-            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem" }}>
-              <div className="hero-author-chip">
-                <img
-                  src="/profile.png"
-                  alt="Vikas Singh"
-                  className="hero-chip-avatar"
-                />
-                <span className="hero-chip-text">Vikas Singh</span>
-              </div>
-
-              <div className="hero-badge" style={{ marginBottom: "1.25rem" }}>
-                <Terminal size={14} />
-                <span>BACKEND DEVELOPER • 4+ YEARS EXP</span>
-              </div>
+            <div className="hero-badge">
+              <Terminal size={14} />
+              <span>BACKEND DEVELOPER • 4+ YEARS EXP</span>
             </div>
 
             <h1 className="hero-title">

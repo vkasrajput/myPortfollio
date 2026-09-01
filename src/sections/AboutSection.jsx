@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { personalInfo, focusAreas } from "../data/portfolioData";
-import { Zap, Layers, ShieldCheck, Code2, CheckCircle2, MapPin, Mail, Phone, ExternalLink } from "lucide-react";
+import { ImageViewModal } from "../components/ImageViewModal";
+import { Zap, Layers, ShieldCheck, Code2, CheckCircle2, MapPin, Eye, ExternalLink } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "../components/Icons";
 
 export function AboutSection() {
+  const [isPhotoOpen, setIsPhotoOpen] = useState(false);
+
   const iconMap = {
     Zap: Zap,
     Layers: Layers,
@@ -40,12 +43,29 @@ export function AboutSection() {
         <div className="about-grid">
           {/* Left Column: Profile Card */}
           <div className="about-profile-card">
-            <div className="about-img-wrapper">
+            <div
+              className="about-img-wrapper"
+              onClick={() => setIsPhotoOpen(true)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setIsPhotoOpen(true);
+                }
+              }}
+              title="Click to view full size photo"
+              aria-label="View full size profile photo"
+            >
               <img
                 src="/profile.png"
                 alt="Vikas Singh - Backend Developer"
                 className="about-profile-img"
               />
+              <div className="about-img-overlay">
+                <Eye size={18} />
+                <span>View Photo</span>
+              </div>
               <div className="about-img-status">
                 <span className="status-dot"></span>
                 <span>Open to Opportunities</span>
@@ -145,6 +165,14 @@ export function AboutSection() {
           </div>
         </div>
       </div>
+
+      {/* Full Photo Modal */}
+      <ImageViewModal
+        isOpen={isPhotoOpen}
+        onClose={() => setIsPhotoOpen(false)}
+        imageSrc="/profile.png"
+        title="Vikas Singh - Profile Photo"
+      />
     </section>
   );
 }

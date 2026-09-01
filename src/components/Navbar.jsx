@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { personalInfo } from "../data/portfolioData";
 import { ThemeToggle } from "./ThemeToggle";
+import { ImageViewModal } from "./ImageViewModal";
 import { Menu, X, FileText, ExternalLink } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./Icons";
 
 export function Navbar({ theme, toggleTheme }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+  const [isPhotoOpen, setIsPhotoOpen] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "#hero" },
@@ -45,16 +47,36 @@ export function Navbar({ theme, toggleTheme }) {
   return (
     <nav className="navbar" aria-label="Main Navigation">
       <div className="container navbar-container">
-        {/* Brand Logo */}
-        <a href="#hero" className="nav-brand" onClick={closeMobileMenu}>
-          <div className="nav-brand-badge">
-            <span>{personalInfo.initials}</span>
+        {/* Brand Logo & Profile Photo */}
+        <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+          <div
+            className="nav-brand-badge"
+            onClick={() => setIsPhotoOpen(true)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                setIsPhotoOpen(true);
+              }
+            }}
+            title="Click to view Vikas Singh's full photo"
+            aria-label="View Vikas Singh profile photo"
+          >
+            <img
+              src="/profile.png"
+              alt="Vikas Singh"
+              className="nav-brand-img"
+            />
           </div>
-          <div>
-            <span>{personalInfo.name}</span>
-            <span className="nav-brand-role">Node.js Developer</span>
-          </div>
-        </a>
+
+          <a href="#hero" className="nav-brand" onClick={closeMobileMenu} style={{ textDecoration: "none" }}>
+            <div>
+              <span>{personalInfo.name}</span>
+              <span className="nav-brand-role">Node.js Developer</span>
+            </div>
+          </a>
+        </div>
 
         {/* Desktop Navigation Links */}
         <ul className="nav-links">
@@ -168,6 +190,14 @@ export function Navbar({ theme, toggleTheme }) {
           </a>
         </div>
       </div>
+
+      {/* Photo Viewer Modal */}
+      <ImageViewModal
+        isOpen={isPhotoOpen}
+        onClose={() => setIsPhotoOpen(false)}
+        imageSrc="/profile.png"
+        title="Vikas Singh - Profile Photo"
+      />
     </nav>
   );
 }
