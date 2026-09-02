@@ -1,19 +1,19 @@
 import React from "react";
 import { githubRepositories, personalInfo } from "../data/portfolioData";
-import { Star, GitFork, ExternalLink, Code2 } from "lucide-react";
+import { Star, GitFork, ExternalLink, Code2, Lock } from "lucide-react";
 import { GithubIcon } from "../components/Icons";
 
 export function GitHubSection() {
   return (
-    <section id="github" className="section" aria-label="Featured GitHub Repositories">
+    <section id="github" className="section" aria-label="Personal Projects and GitHub">
       <div className="container">
         {/* Section Header */}
         <div className="section-header" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end", gap: "1.5rem" }}>
           <div>
-            <span className="section-badge">OPEN SOURCE & CODE</span>
-            <h2 className="section-title">Featured on GitHub</h2>
+            <span className="section-badge">OPEN SOURCE & REPOSITORIES</span>
+            <h2 className="section-title">Personal Projects & GitHub</h2>
             <p className="section-subtitle">
-              Public repositories, boilerplate starters, Docker workflows, and backend utilities.
+              Public open-source repositories, CI/CD templates, AI experiments, and backend utilities. (Professional company projects are private and confidential).
             </p>
           </div>
 

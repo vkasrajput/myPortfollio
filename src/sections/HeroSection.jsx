@@ -21,9 +21,15 @@ export function HeroSection() {
         <div className="hero-grid">
           {/* Left Column: Text & CTAs */}
           <div>
-            <div className="hero-badge">
-              <Terminal size={14} />
-              <span>BACKEND DEVELOPER • 4+ YEARS EXP</span>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0.5rem", marginBottom: "1.25rem" }}>
+              <div className="hero-badge">
+                <Terminal size={14} />
+                <span>Backend Developer | Node.js</span>
+              </div>
+              <div className="status-indicator-badge">
+                <span className="status-dot"></span>
+                <span>Open to Backend / Node.js Opportunities</span>
+              </div>
             </div>
 
             <h1 className="hero-title">
@@ -31,7 +37,7 @@ export function HeroSection() {
             </h1>
 
             <p className="hero-subtitle">
-              {personalInfo.shortBio}
+              Backend Developer with 4+ years of experience building scalable APIs, backend services, microservices, real-time applications and automation solutions.
             </p>
 
             {/* Natural Tech Highlights */}
