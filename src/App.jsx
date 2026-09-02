@@ -1,6 +1,7 @@
 import React from "react";
 import { useTheme } from "./hooks/useTheme";
 import { Navbar } from "./components/Navbar";
+import { CurtainLoader } from "./components/CurtainLoader";
 import { HeroSection } from "./sections/HeroSection";
 import { QuickStats } from "./sections/QuickStats";
 import { AboutSection } from "./sections/AboutSection";
@@ -19,6 +20,9 @@ export default function App() {
 
   return (
     <div className="app-container">
+      {/* Initial Page Load Curtain Reveal */}
+      <CurtainLoader />
+
       {/* Navigation */}
       <Navbar theme={theme} toggleTheme={toggleTheme} />
 
