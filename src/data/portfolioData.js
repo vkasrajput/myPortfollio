@@ -93,7 +93,7 @@ export const skillCategories = [
       { name: "REST APIs", tag: "Architecture", highlight: true },
       { name: "Microservices", tag: "Architecture", highlight: true },
       { name: "Socket.IO", tag: "Real-time", highlight: true },
-      { name: "WebSockets", tag: "Protocol", highlight: false },
+      { name: "WebSockets", tag: "Protocol", highlight: true },
       { name: "Asynchronous Programming", tag: "Core", highlight: true },
     ],
   },
