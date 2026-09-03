@@ -9,9 +9,13 @@ export function HeroSection() {
     "Express.js",
     "MongoDB",
     "MySQL",
+    "PostgreSQL",
+    "Typescript",
+    "Javascript",
     "Redis",
     "Docker",
     "Microservices",
+    "AWS",
     "CI/CD",
   ];
 

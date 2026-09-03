@@ -89,6 +89,7 @@ export const skillCategories = [
       { name: "Node.js", tag: "Runtime", highlight: true },
       { name: "Express.js", tag: "Framework", highlight: true },
       { name: "JavaScript", tag: "Language", highlight: true },
+      { name: "TypeScript", tag: "Language", highlight: true },
       { name: "REST APIs", tag: "Architecture", highlight: true },
       { name: "Microservices", tag: "Architecture", highlight: true },
       { name: "Socket.IO", tag: "Real-time", highlight: true },
@@ -103,6 +104,10 @@ export const skillCategories = [
     skills: [
       { name: "MongoDB", tag: "NoSQL", highlight: true },
       { name: "MySQL", tag: "Relational / SQL", highlight: true },
+      { name: "PostgreSQL", tag: "Relational / SQL", highlight: true },
+      { name: "AWS RDS", tag: "AWS", highlight: true },
+      { name: "AWS DynamoDB", tag: "AWS", highlight: true },
+
       { name: "Redis", tag: "In-Memory / Cache", highlight: true },
     ],
   },

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { personalInfo, focusAreas } from "../data/portfolioData";
 import { ImageViewModal } from "../components/ImageViewModal";
-import { Zap, Layers, ShieldCheck, Code2, CheckCircle2, MapPin, Eye, ExternalLink } from "lucide-react";
+import { Zap, Layers, ShieldCheck, Code2, CheckCircle2, MapPin, Eye } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "../components/Icons";
 
 export function AboutSection() {
@@ -79,7 +79,77 @@ export function AboutSection() {
               <span>{personalInfo.location}</span>
             </div>
 
-            <div style={{ display: "flex", gap: "0.5rem", width: "100%", marginTop: "auto" }}>
+            {/* Structured Card Section 1: CURRENT FOCUS */}
+            <div className="about-profile-section">
+              <div className="about-profile-section-title">CURRENT FOCUS</div>
+              <div className="about-focus-list">
+                <div className="about-focus-item">
+                  <span className="about-focus-arrow">→</span>
+                  <span>Scalable APIs</span>
+                </div>
+                <div className="about-focus-item">
+                  <span className="about-focus-arrow">→</span>
+                  <span>Microservices</span>
+                </div>
+
+                <div className="about-focus-item">
+                  <span className="about-focus-arrow">→</span>
+                  <span>Real-time systems</span>
+                </div>
+                <div className="about-focus-item">
+                  <span className="about-focus-arrow">→</span>
+                  <span>AI &amp; LLM Integrations</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Structured Card Section 2: CURRENTLY BUILDING */}
+            <div className="about-profile-section">
+              <div className="about-profile-section-title">CURRENTLY BUILDING</div>
+              <div className="about-building-list">
+                <div className="about-building-item">
+                  <div className="about-building-header">
+                    <span className="status-dot-pulse"></span>
+                    <span className="about-building-title">CI/CD Node Backend</span>
+                  </div>
+                  <div className="about-building-sub">Docker → AWS ECR</div>
+                </div>
+
+                <div className="about-building-item">
+                  <div className="about-building-header">
+                    <span className="status-dot-pulse"></span>
+                    <span className="about-building-title">AI Voice Assistant</span>
+                  </div>
+                  <div className="about-building-sub">Node.js → Web Audio</div>
+                </div>
+
+                <div className="about-building-item">
+                  <div className="about-building-header">
+                    <span className="status-dot-pulse"></span>
+                    <span className="about-building-title">AI Chatbot</span>
+                  </div>
+                  <div className="about-building-sub">Node.js → Gemini API</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Structured Card Section 3: CORE STACK */}
+            <div className="about-profile-section">
+              <div className="about-profile-section-title">CORE STACK</div>
+              <div className="about-stack-badges">
+                <span className="about-stack-pill">Node.js</span>
+                <span className="about-stack-pill">Express</span>
+                <span className="about-stack-pill">MongoDB</span>
+                <span className="about-stack-pill">MySQL</span>
+                <span className="about-stack-pill">PostgreSQL</span>
+                <span className="about-stack-pill">Redis</span>
+                <span className="about-stack-pill">Docker</span>
+                <span className="about-stack-pill">AWS</span>
+              </div>
+            </div>
+
+            {/* Social Profile Links Pinned to Bottom */}
+            <div className="about-profile-actions">
               <a
                 href={personalInfo.github}
                 target="_blank"
