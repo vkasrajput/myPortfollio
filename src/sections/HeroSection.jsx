@@ -21,7 +21,7 @@ export function HeroSection() {
         <div className="hero-grid">
           {/* Left Column: Text & CTAs */}
           <div>
-            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0.5rem", marginBottom: "1.25rem" }}>
+            <div className="hero-badges-row">
               <div className="hero-badge">
                 <Terminal size={14} />
                 <span>Backend Developer | Node.js</span>
